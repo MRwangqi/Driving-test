@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/main_bar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/que_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/que_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="在道路上跟车行驶时，跟车距离不是主要的，只须保持与前车相等的速度，即可防止发生追尾事故。"
+            android:textColor="#333"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/que_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/que_check_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/que_explain_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="点击查看解释>>"
+                android:textColor="#a1a1a1"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/que_explain_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:layout_marginTop="10dp"
+                android:text="跟车距离很重要，不同的道路对跟车距离要求是不一样的。假设你跟前车的的速度相等，但是距离是1米，是不可能刹得住车的"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
